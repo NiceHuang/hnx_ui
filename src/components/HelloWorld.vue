@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <nx-button text="测试" type="success"></nx-button>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,12 +85,17 @@
 </template>
 
 <script>
+
+  import NxButton from './button/src/Button'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    NxButton
   }
 }
 </script>
